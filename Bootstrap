@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elementos de Interés en Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <section>
+      <div class="jumbotron">
+        <h1 class="display-4">¡Bienvenido/a!</h1>
+        <p class="lead">Esta es una página de ejemplo utilizando Bootstrap.</p>
+        <hr class="my-4">
+        <p>Bootstrap es un framework front-end popular y útil para el desarrollo web.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button" data-bs-toggle="modal" data-bs-target="#myModal">¡Saber más!</a>
+      </div>
+    </section>
+
+    <section>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre">
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="number" class="form-control" id="telefono">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tu nombre</h5>
+          <p class="card-text">Breve descripción sobre ti.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Email: tuemail@example.com</small>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Ventana modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ventana Modal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¡Esta es una ventana modal de ejemplo!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
